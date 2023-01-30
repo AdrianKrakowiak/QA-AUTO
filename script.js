@@ -2,24 +2,39 @@ function myFunction() {
   const element = document.getElementById("id01");
   element.innerHTML = "New Heading";
 }
-
 function myColorChange() {
   const element = document.getElementById("id01");
   element.style.color = "red";
 }
 
-function mojaFunkcja(imie) {
-  const klienci = ["Mango", "Poly", "Ajax"];
-  const klientNameToFind = "Poly";
-  let message
+const przesylka = {
+  name: "",
+  ulica: "",
+};
 
-  for (const klient or klienci) {
-    if (klient === imie) {
-        message = "Klient z takim imieniem jest w bazie danych!"
-    break;
-        }
-    message = "Nie ma takiego"
-  
-    console.log(message);
+const przesylka2 = {
+  name: "",
+  ulica: "",
+};
+
+(przesylka2.waga = 20), (przesylka.name = "List"), (przeyslka2.name = "Paczka");
+
+function mojaFunkcja(id) {
+  const element = document.getElementById("id01");
+  const element2 = document.getElementById("id02");
+
+  if (id === 1) {
+    informacja = "Typ twojej przeyłki to: " + przesylka.name;
+    element.innerHTML = informacja;
+
+    informacja = "Przesyłka nie posiada wagi ";
+    element2.innerHTML = informacja;
+  }
+  if (id === 2) {
+    const element = document.getElementById("id01");
+    informacja = "Typ twojej przeyłki to: " + przesylka2.name;
+    element.innerHTML = informacja;
+    informacja = "Waga twojej przeyłki to: " + przesylka2.waga + "kg";
+    element2.innerHTML = informacja;
   }
 }
